@@ -1,0 +1,31 @@
+{
+  "name": "request-state",
+  "version": "1.0.0",
+  "description": "Immutable state tracker for async requests.",
+  "main": "request-state.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/eseb/request-state"
+  },
+  "keywords": [
+    "immutable",
+    "async",
+    "network",
+    "request",
+    "state",
+    "react",
+    "redux"
+  ],
+  "author": "Seb Bacanu <seb@bacanu.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "expect": "^1.20.2",
+    "mocha": "^3.4.2"
+  },
+  "dependencies": {
+    "key-mirror": "^1.0.1"
+  }
+}
