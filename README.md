@@ -2,6 +2,20 @@
 
 A simple-to-use immutable async state tracker.
 
+Rather than using multiple variables to track your async requests, this library allows you to use just one immutable entity to identify the state of your request.
+
+```es6
+// Replace this...
+const appState = {
+  toDosHaveBeenRequested: false,
+  toDosRequestFailed: true,
+  toDosFailureReason: 404,
+};
+
+// ... with this.
+const appState = RequestState.FAILED.withAttachment(404);
+```
+
 ## Full API
 ```es6
 import RequestState from 'request-state';
