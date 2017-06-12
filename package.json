@@ -1,5 +1,5 @@
 {
-  "name": "request-state",
+  "name": "@eseb/request-state",
   "version": "1.0.0",
   "description": "Immutable state tracker for async requests.",
   "main": "request-state.js",
