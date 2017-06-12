@@ -16,9 +16,11 @@ const appState = {
 const appState = RequestState.FAILED.withAttachment(404);
 ```
 
+Add it to your project via `npm install --save eseb/request-state` or `yarn add eseb/request-state` depending on which package manager you use.
+
 ## Full API
 ```es6
-import RequestState from 'request-state';
+import RequestState from '@eseb/request-state';
 
 // Contains each of the following constants.
 RequestState.NOT_REQUESTED;
@@ -61,7 +63,7 @@ getToDos() {
 ## Usage in Redux
 
 ```es6
-import RequestState from 'request-state';
+import RequestState from '@eseb/request-state';
 
 const INITIAL_STATE = {
   toDos: new OrderedSet(),
