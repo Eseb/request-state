@@ -1,9 +1,11 @@
 {
   "name": "@eseb/request-state",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Immutable state tracker for async requests.",
-  "main": "request-state.js",
+  "main": "./dist/request-state.js",
   "scripts": {
+    "build": "babel ./request-state.js --out-dir dist",
+    "prepublish": "npm run build",
     "test": "mocha test.js"
   },
   "repository": {
@@ -22,6 +24,8 @@
   "author": "Seb Bacanu <seb@bacanu.com>",
   "license": "MIT",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "expect": "^1.20.2",
     "mocha": "^3.4.2"
   },
