@@ -1,4 +1,4 @@
-const keyMirror = require('key-mirror');
+import keyMirror from 'key-mirror';
 
 const States = keyMirror({
   NOT_REQUESTED: null,
@@ -7,7 +7,7 @@ const States = keyMirror({
   FAILED: null,
 });
 
-class RequestState {
+export default class RequestState {
   constructor(
     state = States.NOT_REQUESTED,
     attachment = undefined
@@ -47,9 +47,7 @@ class RequestState {
   }
 }
 
-RequestState.NOT_REQUESTED = new RequestState(States.NOT_REQUESTED);
-RequestState.IN_PROGRESS = new RequestState(States.IN_PROGRESS);
-RequestState.SUCCEEDED = new RequestState(States.SUCCEEDED);
-RequestState.FAILED = new RequestState(States.FAILED);
-
-module.exports = RequestState;
+export const NOT_REQUESTED = new RequestState(States.NOT_REQUESTED);
+export const IN_PROGRESS = new RequestState(States.IN_PROGRESS);
+export const SUCCEEDED = new RequestState(States.SUCCEEDED);
+export const FAILED = new RequestState(States.FAILED);
