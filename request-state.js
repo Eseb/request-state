@@ -1,11 +1,9 @@
-import keyMirror from 'key-mirror';
-
-const States = keyMirror({
-  NOT_REQUESTED: null,
-  IN_PROGRESS: null,
-  SUCCEEDED: null,
-  FAILED: null,
-});
+const States = {
+  NOT_REQUESTED: 'NOT_REQUESTED',
+  IN_PROGRESS: 'IN_PROGRESS',
+  SUCCEEDED: 'SUCCEEDED',
+  FAILED: 'FAILED',
+};
 
 export default class RequestState {
   constructor(

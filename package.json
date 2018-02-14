@@ -1,6 +1,6 @@
 {
   "name": "@eseb/request-state",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Immutable state tracker for async requests.",
   "main": "./dist/request-state.js",
   "scripts": {
@@ -29,7 +29,5 @@
     "expect": "^1.20.2",
     "mocha": "^3.4.2"
   },
-  "dependencies": {
-    "key-mirror": "^1.0.1"
-  }
+  "dependencies": {}
 }
